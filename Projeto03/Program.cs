@@ -45,13 +45,17 @@ namespace Projeto03
 
                         Console.WriteLine();
                         Console.WriteLine("Consulta de Clientes");
-
+                        Console.WriteLine();
                         foreach (var item in lista)
                         {
                             //item -> representa cada cliente contido na lista
-                            Console.WriteLine("Id do(a) cliente: " + item.IdCliente + ", Nome do(a) cliente: " + item.Nome + ", E - mail do cliente: " + item.Email + ", Data de Criação: " + item.DataCriacao.ToString("dd/MM/yyyy"));
+                            Console.WriteLine("Id do(a) cliente: " + item.IdCliente);
+                            Console.WriteLine("Nome do(a) cliente: " + item.Nome);
+                            Console.WriteLine("E - mail do cliente: " + item.Email);
+                            Console.WriteLine("Data de Criação: " + item.DataCriacao.ToString("dd/MM/yyyy"));
+                            Console.WriteLine("----");
 
-                        }
+                         }
                         break;
                     default:
                         break;
@@ -68,6 +72,7 @@ namespace Projeto03
 
 
             Console.ReadKey(); //pausar o prompt
+
         }
     }
 }
